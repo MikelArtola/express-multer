@@ -45,7 +45,7 @@ router.post('/', upload.single('avatar'), function (req, res, next) {
     const izena = req.body.izena;
     const responseText = `Zure izena: ${izena}. Fitxategia: ${req.file.path}`;
     console.log(responseText)
-    res.send("Jasota");
+    res.send(responseText);
 });
 
 module.exports = router;
